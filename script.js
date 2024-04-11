@@ -3,6 +3,7 @@ const problem2 = require('./problem2');
 const problem3 = require('./Problem3');
 const problem4 = require('./problem4');
 const problem5 = require('./problem5');
+const problem6 = require('./problem6');
 // inventory of car dealer
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
@@ -71,6 +72,8 @@ console.log('Problem4 for CarYears: ', CarYears);
 // Executing problem5 for finding the number of cars that are older than  year 2000
 const OlderCars = problem5(CarYears);
 console.log('Problem5 OlderCars: ',OlderCars);
-
+// Executing problem6 for getting only audi and bmw cars in an array  
+const AudiandBMW = problem6(inventory)
+console.log('Problem6 AudiBMW Cars: ',AudiandBMW);
 
 module.exports = inventory;
