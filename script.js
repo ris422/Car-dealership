@@ -1,5 +1,6 @@
 const problem1 = require('./problem1');
 const problem2 = require('./problem2');
+const problem3 = require('./Problem3');
 // inventory of car dealer
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
@@ -59,6 +60,11 @@ console.log(`problem1Result: Car ${problem1Result.id} is a ${problem1Result.car_
 // Executing problem2 for retrieving last car's details
 const lastcarInfo = problem2(inventory);
 console.log(`lastcarInfo: Last car is a ${lastcarInfo.car_make} ${lastcarInfo.car_model}`);
+// Executing problem3 for sorting the array by the names of cars
+const modelNames =  problem3(inventory);
+console.log('Problem3 Sorted modelNames: ', modelNames);
+
+
 
 
 
