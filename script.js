@@ -2,6 +2,7 @@ const problem1 = require('./problem1');
 const problem2 = require('./problem2');
 const problem3 = require('./Problem3');
 const problem4 = require('./problem4');
+const problem5 = require('./problem5');
 // inventory of car dealer
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
@@ -67,12 +68,9 @@ console.log('Problem3 Sorted modelNames: ', modelNames);
 // Executing problem4 for getting the manufacture year of the car
 const CarYears = problem4(inventory);
 console.log('Problem4 for CarYears: ', CarYears);
-
-
-
-
-
-
+// Executing problem5 for finding the number of cars that are older than  year 2000
+const OlderCars = problem5(CarYears);
+console.log('Problem5 OlderCars: ',OlderCars);
 
 
 module.exports = inventory;

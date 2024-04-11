@@ -1,7 +1,5 @@
-// Importing the problem4 function
-const problem4 = require('../problem4');
-// Importing the inventory array
-const inventory = require('../script');
+// Importing the problem5 function
+const problem5 = require('../problem5');
 // Array of car's manufacture year only
 const CarYears = [
     2009, 2001, 2010, 1983, 1990, 1995,
@@ -16,15 +14,15 @@ const CarYears = [
   ]
 //For negative test if inventory is not array
 const inventoryString = 'invalid';
-// Describe block to test problem4
-describe('Problem4 function', () => {
-  // Test case for the function
+// Describe block to test problem5
+describe('Problem5 function', () => {
+  // Test case for the successfull response for number of cars that are older than year 2000
   it('should return manufacture year array', () => {
-    // expecting array of cars manufacture year
-    expect(problem4(inventory)).toEqual(CarYears);
+    // expecting number of cars that are older than year 2000
+    expect(problem5(CarYears)).toEqual(25);
   });
   it('should return error if inventory is not array type', () => {
     // expecting error as inventory passed is of type string instead of array
-    expect(problem4(inventoryString)).toEqual('arr must be typeof Array');
+    expect(problem5(inventoryString)).toEqual('arr must be typeof Array');
   });
 });
