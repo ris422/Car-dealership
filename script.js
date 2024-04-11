@@ -1,4 +1,5 @@
 const problem1 = require('./problem1');
+const problem2 = require('./problem2');
 // inventory of car dealer
 let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
@@ -52,9 +53,14 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
 
-// Excuting problem1
+// Executing problem1
 const problem1Result = problem1(inventory, 33);
 console.log(`problem1Result: Car ${problem1Result.id} is a ${problem1Result.car_year} ${problem1Result.car_make} ${problem1Result.car_model}`);
+// Executing problem2 for retrieving last car's details
+const lastcarInfo = problem2(inventory);
+console.log(`lastcarInfo: Last car is a ${lastcarInfo.car_make} ${lastcarInfo.car_model}`);
+
+
 
 
 module.exports = inventory;
