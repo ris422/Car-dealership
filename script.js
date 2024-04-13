@@ -66,7 +66,7 @@ console.log(`lastcarInfo: Last car is a ${lastcarInfo.car_make} ${lastcarInfo.ca
 // Executing problem3 for sorting the array by the names of cars
 const modelNames =  problem3(inventory);
 console.log('Problem3 Sorted modelNames: ', modelNames);
-// Executing problem4 for getting the manufacture year of the car
+// // Executing problem4 for getting the manufacture year of the car
 const CarYears = problem4(inventory);
 console.log('Problem4 for CarYears: ', CarYears);
 // Executing problem5 for finding the number of cars that are older than  year 2000
